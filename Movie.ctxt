@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=anID\ aTitle\ aYear\ theGenres\ aDirector\ aCountry\ aPoster\ theMinutes
+comment0.target=Movie(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment0.text=public\ Movie\ (String\ anID,\ String\ aTitle,\ String\ aYear,\ String\ theGenres)\ {\r\n\ \ \ \ \ \ \ \ //\ just\ in\ case\ data\ file\ contains\ extra\ whitespace\r\n\ \ \ \ \ \ \ \ id\ \=\ anID.trim();\r\n\ \ \ \ \ \ \ \ title\ \=\ aTitle.trim();\r\n\ \ \ \ \ \ \ \ year\ \=\ Integer.parseInt(aYear.trim());\r\n\ \ \ \ \ \ \ \ genres\ \=\ theGenres;\r\n}
+comment1.params=
+comment1.target=java.lang.String\ getID()
+comment2.params=
+comment2.target=java.lang.String\ getTitle()
+comment3.params=
+comment3.target=int\ getYear()
+comment4.params=
+comment4.target=java.lang.String\ getGenres()
+comment5.params=
+comment5.target=java.lang.String\ getCountry()
+comment6.params=
+comment6.target=java.lang.String\ getDirector()
+comment7.params=
+comment7.target=java.lang.String\ getPoster()
+comment8.params=
+comment8.target=int\ getMinutes()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ThirdRatings()
+comment1.params=ratingsfile
+comment1.target=ThirdRatings(java.lang.String)
+comment2.params=
+comment2.target=int\ getRaterSize()
+comment3.params=id\ minimalRaters
+comment3.target=double\ getAverageByID(java.lang.String,\ int)
+comment4.params=minimalRaters
+comment4.target=java.util.ArrayList\ getAverageRatings(int)
+comment4.text=private\ HashMap<String,ArrayList<Double>>\ get_movie_with_raters(){\n\ \ \ \ \ \ HashMap<String,ArrayList<Double>>\ movie_rated\=new\ HashMap<String,ArrayList<Double>>();\n\ \ \ \ \ \ for(Rater\ rater\:myRaters){\n\ \ \ \ \ \ \ \ \ \ HashMap<String,Rating>\ ratings\=rater.getRating();\n\ \ \ \ \ \ \ \ \ \ for(\ String\ key\:ratings.keySet()){\n\ \ \ \ \ \ \ \ \ \ String\ movie_id\=key;\n\ \ \ \ \ \ \ \ \ \ double\ movie_id_rated\=ratings.get(key).getValue();\n\ \ \ \ \ \ \ \ \ \ if(movie_rated.containsKey(movie_id)){\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ movie_rated.get(movie_id).add(movie_id_rated);\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ else\ {\n\ \ \ \ \ \ \ \ \ \ \ \ \ ArrayList<Double>\ rates\=new\ ArrayList<Double>();\n\ \ \ \ \ \ \ \ \ \ \ \ \ rates.add(movie_id_rated);\n\ \ \ \ \ \ \ \ \ \ \ \ \ movie_rated.put(movie_id,rates);\n\ \ \ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ }\n\ \ \ \ \ \ return\ movie_rated;\n}
+comment5.params=minimalRaters\ filterCriteria
+comment5.target=java.util.ArrayList\ getAverageRatingByFilter(int,\ Filter)
+comment5.text=public\ String\ getID(String\ title){\n\ \ \ \ \ \ String\ ID\=new\ String();\n\ \ \ \ \ \ for(int\ i\=0;i<myMovies.size();i++){\n\ \ \ \ \ \ \ \ //\ System.out.println("the\ one\ is\ "+movie.getID());\n\ \ \ \ \ \ \ \ \ if(title.toLowerCase().equals(myMovies.get(i).getTitle().toLowerCase())){\n\ \ \ \ \ \ \ \ \ \ ID\=myMovies.get(i).getID();\n\ \ \ \ \ \ \ \ \ \ break;\ \ \ \ \ \ \n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ else{\n\ \ \ \ \ \ \ \ \ \ ID\=\ "no\ such\ title";\n\ \ \ \ \ \ \ \ }\ \n\ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ return\ ID;\n\ \ \ \ \ \ \n}
+numComments=6
